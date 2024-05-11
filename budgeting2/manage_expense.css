@@ -1,0 +1,299 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body{
+  background: #dfe9f5;
+  margin: 0; /* Add this to remove default body margin */
+}
+.container{
+    display: flex;
+   height: 100vh;
+}
+
+
+nav{
+    position: fixed; 
+    bottom: 0; 
+    background: #fff;
+    width: 280px;
+    overflow: hidden;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    height: 100%; /* Set height to 100% */
+}
+.logo{
+  text-align: center;
+  display: flex;
+  margin: 10px 0 0 10px;
+}
+.logo img{
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+.logo span{
+  font-weight: bold;
+  padding-left: 15px;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+a{
+  position: relative;
+  color: rgb(85, 83, 83);
+  font-size: 14px;
+  display: table;
+  width: 280px;
+  padding: 10px;
+}
+nav .fas{
+  position: relative;
+  width: 70px;
+  height: 40px;
+  top: 14px;
+  font-size: 20px;
+  text-align: center;
+}
+.nav-item{
+  position: relative;
+  top: 12px;
+  margin-left: 10px;
+}
+a:hover{
+  background: #80aee4;
+}
+.logout{
+  position: absolute;
+  bottom: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.wrapper{
+    width: 90%;
+    font-size: 16px;
+    max-width: 43.75em;
+    margin: 1em auto;
+    padding: 0 1em;
+}
+
+.sub-container{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3em;
+}
+.flex{
+  display: flex;
+  align-items: center;
+}
+.flex-space{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.wrapper h3{
+  color: black;
+  font-weight: 500;
+  margin-bottom: 0.6em;
+}
+.container input{
+  display: block;
+  width: 100%;
+  padding: 0.6em 0.3em;
+  border: 1px solid #d0d0d0;
+  border-radius: 0.3em;
+  color: #414a67;
+  outline: none;
+  font-weight: 400;
+  margin-bottom: 0.6em ;
+}
+.container input:focus{
+  border-color: #587ef4;
+}
+.total-amount-container,
+.user-amount-container{
+  background-color: #ffffff;
+  padding: 1.25em 0.9em;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em rgba(28, 0, 80, 0.06);
+}
+.output-container{
+  background-color: #587ef4;
+  color: #ffffff;
+  border-radius: 0.3em;
+  box-shadow: 0 0.6em 1.2em rgb(28, 0,80,0.06);
+  margin: 2em 0;
+  padding: 1.2em;
+}
+.output-container p {
+  font-weight: 500;
+  margin-bottom: 0.6em;
+}
+.output-container span{
+  display: block;
+  text-align: center;
+  font-weight: 400;
+  color: #e5e5e5;
+}
+.submit{
+  font-size: 1em;
+  margin-top: 0.8em;
+  background-color: #587ef4;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  padding: 0.6em 1.2em;
+  border-radius: 0.3em;
+  cursor: pointer;
+}
+.list{
+  background-color: #ffffff;
+  padding: 1.8em 1.2em;
+  box-shadow: 0 0.6em 1.2em rgb(28, 0,80,0.06);
+  border-radius: 0.6em;
+}
+.hide{
+  display: none;
+}
+.error{
+  color: red;
+}
+
+.table-container {
+  margin-top: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+th, td {
+  width: 33.33%;
+  border: 1px solid #ddd;
+  padding: 8px; 
+  text-align: left;
+  box-sizing: border-box; 
+  cursor: pointer;
+}
+
+th {
+  text-align: center;
+  background-color: #f2f2f2;
+}
+
+th, td, .Edit, .Delete{
+  text-align: center;
+}
+
+
+
+.nav-top-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-box {
+  background: #fff;
+  width: 100%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px;
+  margin-top: 12px;
+}
+
+.search-box select {
+  flex: 1; 
+  background: transparent;
+  outline: none;
+  border: 0;
+  font-size: 15px;
+  margin-left: 8px;
+ 
+}
+
+.search-btn {
+  padding: 10px 25px;
+  background-color: #587ef4;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  margin-right: -20px;
+}
+
+.search-btn:hover {
+  background-color: #2980b9;
+}
+
+.delete:hover{
+  background-color: #2980b9;
+}
+
+
+.cvs{
+  margin-top: 10px;
+  padding: 3px 1px;
+}
+
+.cvs .export-link {
+  display: inline-block;
+  padding: 10px;
+  background-color: #587ef4;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.save {
+
+  text-align: center;
+  margin-top: 10px;
+}
+
+.save a {
+  width: 100%;
+  text-decoration: none;
+}
+
+.btn-save {
+  width: 100%;
+  padding: 10px;
+  background-color: #587ef4;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.btn-save:hover {
+  background-color: #2980b9;
+}
